@@ -36,14 +36,14 @@
   border: 2px solid rgb(9, 0, 14);
   padding: 0px; 
   opacity: 50;
-  /* align-items: ; */
+  align-items: center;
 }
 .modal-content {
-  /* background-color: aliceblue; */
+  background-color: aliceblue; 
   top:5%;
   margin: 15% auto;
   padding: 20px;
-  /* border: 2px solid #a73f2d; */
+  border: 2px solid #a73f2d; 
   width: 40%;  
 }
 .close {
@@ -93,9 +93,9 @@
     background-size: contain; 
   }
   #myImage {
-    /* height: 100%;
+    height: 100%;
     object-fit:cover;
-    width: 100%; */
+    width: 100%; 
     height:50%;
     width: 60%;
   }
