@@ -10,12 +10,12 @@
     margin-bottom: 3px;
     /* width: 50%; */
     width: 60%;
-    box-shadow:inset 0px 34px 0px -15px #b54b3a;
-	  background-color:#a73f2d;
+    box-shadow:inset 0px 34px 0px -15px lightblue;
+	  background-color:lightblue;
 	  border:4px solid #241d13;
 	  display:inline-block;
 	  cursor:pointer;
-	  color:#ffffff;
+	  color:black;
 	  font-family:Arial;
 	  font-size:15px;
 	  font-weight:bold;
