@@ -11,33 +11,39 @@
 </head>
   
 <body>
-
+<div id="wrapper">
 		<div id = "showBar" class="" >
 			<button id="myT" class="center" onmousedown="showBar()">SHOW</button>
 		</div>
-
+    
 		<div id = "controlBar" class="" >
-				<input type="file"   class="center" id="fileToLoad"><br>
-				<div id="inputTextToSave" resize:both ></div>     
-				<div id="fileToLoad"></div>    
-      		
+      <div id= "imageBar" class="center">
+        <img id="myImage"   class="center_full"  src="data/life.jpg"style="width = 90%">
+      
+      <input type="file"   class="" id="fileToLoad"><br>
+      <div id="inputTextToSave" resize:both ></div>     
+      <div id="fileToLoad"></div>    
+      </div>
 			<!--
-			    <button id=record  class="center" ></button>
+        <button id=record  class="center" ></button>
 				
-      			<button id=stopRecord  class="center" ></button> 
+        <button id=stopRecord  class="center" ></button> 
 			-->  
-				  <button id="myP"  class="center"  onmousedown="mouseDown()" onmouseup="mouseUp()"> TALK/SEND	</button>
-				  <button id="myQ"  class="center"  onmousedown="playBack()">PLAY BACK</button>
-				 
+				  <button id="myP"  class="center"  onmousedown="mouseDown()" onmouseup="mouseUp()"> HOLD DOWN TO RECORD	</button>
+				<div class="buttonCluster">
+          <button id="myQ"  class="center"  onmousedown="playBack()">PLAY BACK</button>
+          
 				  <button id="myS"  class="center"  onmousedown="fullScan()">LOOP</button>
 			<!--	  <input type="text" class="center" id="myText" value="start.jpg"> -->
 		<!--	  <button id="myS"  class="center"  onmousedown="loadFileAsText()">LOAD</button>-->	
 				  
 				                     
-				  <button id="myT" class="center" onmousedown="hideBar()">HIDE</button>
-				  <button id="myU" class="center" onmousedown="">STOP</button>
-				  <button id="myBtn" class="center" onmousedown="showUploads()">SHOW UPLOADS</button>
-				  <audio id=recordedAudio class="center" ></audio>
+    <button id="myU" class="center" onmousedown="">STOP</button>
+    <button id="myBtn" class="center" onmousedown="showUploads()">SHOW UPLOADS</button>
+    <audio id=recordedAudio class="center" ></audio>
+  </div>
+    <button id="myT" class="center" onmousedown="hideBar()">HIDE</button>
+    
 			<div id="myModal" class="modal">
 				<div class="modal-content"><h1>Uploaded Files:</h1>
 					<span class="close" id="close">&times;</span>
@@ -51,9 +57,6 @@
 			
 					
 
-					<div id= "imageBar">
-						<img id="myImage"   class="center_full"  src="data/life.jpg"style="width = 90%">
-					</div>
 			 
 			    
 				<!--  <div id=recordings style="background-color:pink">relay</div> -->
@@ -61,6 +64,7 @@
 <!-- partial -->
 
   <script  src="script.js"></script> 
+</div>  
 </body>
 </html>
 <!-- partial -->
