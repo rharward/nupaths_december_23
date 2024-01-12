@@ -22,6 +22,26 @@
 	  /* padding:9px 23px; */
 	  text-decoration:none;
 }
+
+button:hover{
+  transform: scale(1.5);
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+  text-shadow: 2pt 2pt 5px rgb(95, 106, 227) ;
+}
+
+footer{
+  font-size: 10pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .modal {
   display: none;
   position: fixed;
