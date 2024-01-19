@@ -12,16 +12,12 @@
 
   /*BUTTONS*/ 
   .center { 
-    display: block; 
-    margin-left: 20%; 
+    margin-left: 30%; 
     margin-right: auto; 
-    margin-bottom: 5px; 
-    padding: 5% auto 5% auto; 
-    width: 60%; 
+    margin-bottom: 15px;  
+    width: 40%; 
     height:50px; 
-    margin-bottom: 3px;  
 	background-color:lightblue; 
-	border:3px solid #241d13; 
 	display:inline-block; 
 	cursor:pointer; 
 	  color:black; 
@@ -29,6 +25,9 @@
 	  font-size:15px; 
 	  font-weight:bold; 
 	  text-decoration:none; 
+      border:3px solid #241d13; 
+      border-radius: 8px;
+
 } 
 
 button:hover
@@ -38,17 +37,31 @@ button:hover
   background-color:darkslateblue; 
 } 
 
+    .filebutton{
+        border:3px solid #241d13; 
+        border-radius: 8px;
+        margin-left: 30%; 
+        margin-right: auto; 
+        margin-bottom: 5px;  
+        width:40%; 
+        height:30px; 
+        background-color:lightblue; 
+        display:inline-block; 
+    }
+
 
 /*HEADER AND FOOTER*/ 
 
 h1{ 
 
-  font-family: Arial, Helvetica, sans-serif; 
-  font-size: 16pt; 
+  font-family:serif;
+  font-size: 30pt; 
   font-weight: bold; 
   color:aliceblue; 
   text-align: center; 
-  text-shadow: 2pt 2pt 5px rgb(118, 128, 239) ; 
+  text-shadow: 2pt 2pt 5px rgb(118, 128, 239);
+  margin: 10px; 
+  padding: 5px;
 } 
 
 footer{ 
