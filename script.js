@@ -5,11 +5,26 @@ let localCounter = -1;
 let showHide = true;
 
 const input = document.querySelector("myText");
-//input.addEventListener('change', updateImageDisplay);
 function updateImageDisplay() {
   document.getElementById("myText").value =
     document.getElementById("fileToLoad").value;
 }
+
+
+//PREVIEW IMAGE SCRIPT
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        document.querySelector("#myImage").setAttribute("src", e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
 
 navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
   handlerFunction(stream);
